@@ -34,7 +34,7 @@ pipeline {
         stage('Deploy to Application EC2') {
             steps {
                 sh """
-                ssh ubuntu@13.233.255.60 '
+                ssh ubuntu@13.203.230.73 '
                   cd /home/ubuntu/Exercise/node-student-app &&
                   git pull origin main &&
                   npm install &&
