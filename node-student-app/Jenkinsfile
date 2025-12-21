@@ -28,7 +28,7 @@ pipeline {
         stage('Deploy to EC2') {
             steps {
                 sh '''
-                ssh ec2-user@<APP-EC2-IP> "
+                ssh ec2-user@13.203.230.73 "
                   cd /home/ec2-user/node-students-app || exit 1
                   git pull origin main
                   npm install
